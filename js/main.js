@@ -7,15 +7,7 @@ var Etherpad = window.Etherpad || {};
 
     var init = function () {
         $(function () {
-            $(".p2pu-tab").p2puSlider({
-                navbarContainer: '.navbar',
-                icon: '.p2pu-tab-icon',
-                iconUp: 'icon-chevron-sign-down',
-                iconDown: 'icon-chevron-sign-up'
-            });
-
-            $('.typeahead-input').typeahead({
-                source: [')',
+            var pads = [')',
                     '*contentparty',
                     '092010WebDev101',
                     '0PbKrquES4',
@@ -1456,13 +1448,27 @@ var Etherpad = window.Etherpad || {};
                     'zjDLNwVzO3',
                     'zuruch',
                     'zuzel',
-                    'zuzel_dirk']
+                    'zuzel_dirk'];
+            $(".p2pu-tab").p2puSlider({
+                navbarContainer: '.navbar',
+                icon: '.p2pu-tab-icon',
+                iconUp: 'icon-chevron-sign-down',
+                iconDown: 'icon-chevron-sign-up'
+            });
+
+            $('.typeahead-input').typeahead({
+                source: pads
             });
 
             $('.pad-link').click(function (event) {
                 event.preventDefault();
                 var pad = $('.typeahead-input').val();
-                window.location = "p/" + pad;
+                if ($.inArray(pad, pads) > -1) {
+                    window.location = "p/" + pad;
+                } else {
+                    window.location = "404.html";
+                }
+
             });
         });
     };

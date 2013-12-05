@@ -7,6 +7,12 @@ var Etherpad = window.Etherpad || {};
 
     var init = function () {
         $(function () {
+            $(".p2pu-tab").p2puSlider({
+                navbarContainer: '.navbar',
+                icon: '.p2pu-tab-icon',
+                iconUp: 'icon-chevron-sign-down',
+                iconDown: 'icon-chevron-sign-up'
+            });
 
             $('.typeahead-input').typeahead({
                 source: [')',
@@ -1453,7 +1459,7 @@ var Etherpad = window.Etherpad || {};
                     'zuzel_dirk']
             });
 
-            $('.pad-link').click(function () {
+            $('.pad-link').click(function (event) {
                 event.preventDefault();
                 var pad = $('.typeahead-input').val();
                 window.location = "files/" + pad + ".html";

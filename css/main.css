@@ -1,15 +1,70 @@
+html, body {
+    height: 100%;
+}
 
+body {
+    padding-top: 60px;
+    padding-bottom: 20px;
+    height: 100%;
+}
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+section {
+    height: 100%;
+    border-top: 1px solid #d8dbde;
+    box-shadow: inset 0 5px 5px -3px rgba(0, 0, 0, 0.1);
+    background: #f3f4f8;
+    background: url("../img/bgtexture.png"), -moz-linear-gradient(top, #f3f4f8 0%, white 100%);
+    background: url("../img/bgtexture.png"), -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f3f4f8), color-stop(100%, white));
+    background: url("../img/bgtexture.png"), -webkit-linear-gradient(top, #f3f4f8 0%, white 100%);
+    background: url("../img/bgtexture.png"), -o-linear-gradient(top, #f3f4f8 0%, white 100%);
+    background: url("../img/bgtexture.png"), -ms-linear-gradient(top, #f3f4f8 0%, white 100%);
+    background: url("../img/bgtexture.png"), linear-gradient(to bottom, #f3f4f8 0%, white 100%);
+}
 
-.container{
+.jumbotron {
+    margin-top: 60px;
+}
+
+.navbar .brand {
+    background: url("../img/logo-p2pu-menu.png");
+}
+
+.container {
     text-align: center;
 }
-input[type="text"].typeahead-input{
+
+input[type="text"].typeahead-input {
     height: 60px;
     font-size: 45px;
+}
+
+.input-append .btn:last-child {
+    padding: 23px;
+    font-size: 25px;
+}
+
+.typeahead.dropdown-menu {
+    width: 535px;
+    margin-top: -1px;
+}
+
+.dropdown-menu li > a {
+    height: 35px;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: left;
+}
+
+.dropdown-menu .active > a, .dropdown-menu .active > a:hover {
+    color: #FFFFFF;
+    background-color: #05c6b4;
+    background-image: -moz-linear-gradient(top, #05c6b4, #05c6b4);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#05c6b4), to(#05c6b4));
+    background-image: -webkit-linear-gradient(top, #05c6b4, #05c6b4);
+    background-image: -o-linear-gradient(top, #05c6b4, #05c6b4);
+    background-image: linear-gradient(to bottom, #05c6b4, #05c6b4);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF05C6B4', endColorstr='#FF05C6B4', GradientType=0);
 }
 
 

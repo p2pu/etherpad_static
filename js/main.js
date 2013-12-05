@@ -1462,7 +1462,7 @@ var Etherpad = window.Etherpad || {};
             $('.pad-link').click(function (event) {
                 event.preventDefault();
                 var pad = $('.typeahead-input').val();
-                window.location = "files/" + pad + ".html";
+                window.location = "p/" + pad;
             });
         });
     };

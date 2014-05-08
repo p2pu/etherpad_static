@@ -1,11 +1,7 @@
-<!doctype html>
-<html lang="en">
-<head>
-<title>statsd</title>
-<meta charset="utf-8">
-<style> * { font-family: arial, sans-serif;
-font-size: 13px;
-line-height: 17px; }ul.indent { list-style-type: none; }ol { list-style-type: decimal; }ol ol { list-style-type: lower-latin; }ol ol ol { list-style-type: lower-roman; }ol ol ol ol { list-style-type: decimal; }ol ol ol ol ol { list-style-type: lower-latin; }ol ol ol ol ol ol{ list-style-type: lower-roman; }ol ol ol ol ol ol ol { list-style-type: decimal; }ol  ol ol ol ol ol ol ol{ list-style-type: lower-latin; }</style>
-</head>
-<body>Statsd Documentation<br><br>The blog post (read it): <a href="http&#x3a;&#x2F;&#x2F;codeascraft&#x2e;etsy&#x2e;com&#x2F;2011&#x2F;02&#x2F;15&#x2F;measure&#x2d;anything&#x2d;measure&#x2d;everything&#x2F;">http:&#x2F;&#x2F;codeascraft.etsy.com&#x2F;2011&#x2F;02&#x2F;15&#x2F;measure-anything-measure-everything&#x2F;</a><br>The code: <a href="https&#x3a;&#x2F;&#x2F;github&#x2e;com&#x2F;etsy&#x2F;statsd&#x2F;">https:&#x2F;&#x2F;github.com&#x2F;etsy&#x2F;statsd&#x2F;</a><br>README: <a href="https&#x3a;&#x2F;&#x2F;github&#x2e;com&#x2F;etsy&#x2F;statsd&#x2F;blob&#x2F;master&#x2F;README&#x2e;md">https:&#x2F;&#x2F;github.com&#x2F;etsy&#x2F;statsd&#x2F;blob&#x2F;master&#x2F;README.md</a><br><br>There are three parts of the monitoring &#x2F; tracking package plus the client:<br><br>1. Statsd - Listens for UDP packets sent to stats.p2pu.org<br>2. Carbon - Stores data that Statsd recieved to disk<br>3. Graphite - Used to visualize data in a web browser<br>4. Client - Sends counters and timers to statsd server (there&#x27;s a python library and a bunch of others available)<br><br>Two types of metrics:<br><br>1. Counter - Simple, count things. Increment one by one. Used to keep track of things like new users over time<br>2. Timer - Keep track of durations of times. Each record is a numberical value. Used to keep track of things like average page load time over time<br><br>New metrics can be created on the fly.<br>Each metric has a name like this &quot;p2pu.user.sign_up&quot;<br>The &quot;.&quot; in the names are used for grouping metrics together, and are shown as folders in graphite.<br><br>In graphite, you can safely ignore the metrics that are outside of the p2pu namespace. They&#x27;re from statsd wanting to track itself<br><br><br></body>
+<html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx/1.6.0</center>
+</body>
 </html>

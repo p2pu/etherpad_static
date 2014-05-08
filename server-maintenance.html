@@ -1,7 +1,11 @@
-<html>
-<head><title>502 Bad Gateway</title></head>
-<body bgcolor="white">
-<center><h1>502 Bad Gateway</h1></center>
-<hr><center>nginx/1.6.0</center>
-</body>
+<!doctype html>
+<html lang="en">
+<head>
+<title>server-maintenance</title>
+<meta charset="utf-8">
+<style> * { font-family: arial, sans-serif;
+font-size: 13px;
+line-height: 17px; }ul.indent { list-style-type: none; }ol { list-style-type: decimal; }ol ol { list-style-type: lower-latin; }ol ol ol { list-style-type: lower-roman; }ol ol ol ol { list-style-type: decimal; }ol ol ol ol ol { list-style-type: lower-latin; }ol ol ol ol ol ol{ list-style-type: lower-roman; }ol ol ol ol ol ol ol { list-style-type: decimal; }ol  ol ol ol ol ol ol ol{ list-style-type: lower-latin; }</style>
+</head>
+<body>We need to migrate all non essential services away from server running p2pu.org<br><br>Strategy:<br><ol class="number"><li>[D] Move archive.p2pu.org to shared hosting<ol class="number"><li>Copy files and db over to shared hosting</li><li>Test</li><li>Update DNS</li></ol></li><li><br></li><li>Update p2pu.org linode server<ol class="number"><li>Create full backup of p2pu.org server</li><li>organize space for backup at Amazon S3 or glacier</li></ol></li><li>Retire&#x2F;move badges.p2pu.org<ol class="number"><li>maybe add a permanent redirect to p2pu.org&#x2F;badges?</li></ol></li></ol><br><br></body>
 </html>

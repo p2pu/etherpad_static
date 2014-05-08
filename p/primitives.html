@@ -1,7 +1,11 @@
-<html>
-<head><title>502 Bad Gateway</title></head>
-<body bgcolor="white">
-<center><h1>502 Bad Gateway</h1></center>
-<hr><center>nginx/1.6.0</center>
-</body>
+<!doctype html>
+<html lang="en">
+<head>
+<title>primitives</title>
+<meta charset="utf-8">
+<style> * { font-family: arial, sans-serif;
+font-size: 13px;
+line-height: 17px; }ul.indent { list-style-type: none; }ol { list-style-type: decimal; }ol ol { list-style-type: lower-latin; }ol ol ol { list-style-type: lower-roman; }ol ol ol ol { list-style-type: decimal; }ol ol ol ol ol { list-style-type: lower-latin; }ol ol ol ol ol ol{ list-style-type: lower-roman; }ol ol ol ol ol ol ol { list-style-type: decimal; }ol  ol ol ol ol ol ol ol{ list-style-type: lower-latin; }</style>
+</head>
+<body><strong>P2PU API Primitives</strong><br><br>There&#x27;s been a lot of talk recently about P2PU as a platform, an API, and possibly some sort of plugin architecture. I think a good first step is to think about P2PU as a set of primitives that we expose via the API.<br><br><strong>What are the basic primitives shared across the different learning models at P2PU?</strong><br><br><strong>Goal:</strong> Define an API that will let developers create new types of P2P Learning interactions in addition to Courses, Study Groups, and Challenges.<br><br><ul class="bullet"><li>Registration (&amp; confirmation)<ul class="bullet"><li>Allow people to sign up, and confirm participation</li></ul></li><li>Group<ul class="bullet"><li>Create collections of users that are working together</li></ul></li><li>Notification<ul class="bullet"><li>Send messages to participants that must be acknowledged</li></ul></li><li>Task &#x2F; Activity &#x2F; Objective &#x2F; Thing to do<ul class="bullet"><li>This could be broken down into different types providing added functionality for each type, may or may not be worthwhile</li></ul></li><li>Submission<ul class="bullet"><li>Again we may wan to break this down into more specific types of submissions to provide more customized functionality</li></ul></li><li>Discussion<ul class="bullet"><li>A space to discus a specific topic, threaded replies</li></ul></li><li>user profile, vcard</li><li>badge (skill, value, community,osqa)</li><li>stream</li><li>tag</li><li>social graph (digraph of followers &#x2F; following relationship)</li><li>{Badges, Learning Plan, Interests,&nbsp; Future Courses} (narrative, url or list of tags)</li><li>{BackPack, Portfolio} (bag of Badges)</li><li>{ExternalResource, WorkProduct, Evidence} (bag of links &#x2F; bag of evidence)</li><li>ToolBox (bag of resources links and narrative)</li><li>Message</li><li>Comment</li></ul><br></body>
 </html>
